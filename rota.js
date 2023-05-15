@@ -1,5 +1,6 @@
 const { Router } = require('express')
 const musicos = require('./JSON/musicos.json')
+const controller = require('./src/controllers/controllerMusicos')
 
 const rotas = Router()
 
@@ -8,17 +9,9 @@ rotas
         res.send('Inicio')
     })
 
-    .get('/musicos', (req, res) => {
-        res.json(musicos)
-    })
-
-    .get('/musicos/teclado', (req, res) => {
-        res.json(musicos.teclado)
-    })
-    
-    .get('/musicos/violao', (req, res) => {
-        res.json(musicos.violao)
-    })
+    .get('/musicos', controller.todos)
+    .get('/musicos/teclado', controller.teclado)
+    .get('/musicos/violao', controller.violao)
 
     .get('/musicos/teclado/nome', (req, res) => {
         const dado = req.body.nome
