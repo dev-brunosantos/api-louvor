@@ -10,12 +10,12 @@
     },
 
     "violao": {
-        "nome": {
-            "Alex": "Alex",
-            "BrunoPiaui": "Bruno Piaui",
-            "BrunoSantos": "Bruno Santos",
-            "Monica": "Monica",
-            "Guilherme": "Guilherme"
-        }
+        "nome": [
+            "Alex",
+            "Bruno Piaui",
+            "Bruno Santos",
+            "Monica",
+            "Guilherme"
+        ]
     }
 }
