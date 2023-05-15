@@ -15,6 +15,11 @@ class Musicos {
         const violao = await api.violao
         res.json(violao)
     }
+
+    async nome(req, res) {
+        const nome = await api.teclado.nome
+        res.json(nome)
+    }
 }
 
 const controller = new Musicos

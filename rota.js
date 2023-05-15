@@ -13,20 +13,22 @@ rotas
     .get('/musicos/teclado', controller.teclado)
     .get('/musicos/violao', controller.violao)
 
-    .get('/musicos/teclado/nome', (req, res) => {
-        const dado = req.body.nome
-        if (dado == "Bruno Santos") {
-            res.json(musicos.teclado.nome.Bruno)
-        }
-        
-        if (dado == "Rodolfo") {
-            res.json(musicos.teclado.nome.Robert)
-        }
+    .get('/musicos/teclado/nome', controller.nome)
 
-        else {
-            res.json({mensagem: "Musico não encontrado"})
-        }
-    })
+    // .get('/musicos/teclado/nome', (req, res) => {
+    //     const dado = req.body.nome
+    //     if (dado == "Bruno Santos") {
+    //         res.json(musicos.teclado.nome.Bruno)
+    //     }
+        
+    //     if (dado == "Rodolfo") {
+    //         res.json(musicos.teclado.nome.Robert)
+    //     }
+
+    //     else {
+    //         res.json({mensagem: "Musico não encontrado"})
+    //     }
+    // })
 
 
 
