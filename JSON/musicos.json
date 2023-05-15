@@ -1,12 +1,12 @@
 
 {
     "teclado": {
-        "nome": {
-            "Bruno":"Bruno Santos",
-            "Robert":"Robert",
-            "Rodolfo":"Rodolfo",
-            "Uelves":"Uelves"
-        }
+        "nome": [
+            "Bruno Santos",
+            "Robert",
+            "Rodolfo",
+            "Uelves"
+        ]
     },
 
     "violao": {
